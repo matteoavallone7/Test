@@ -14,7 +14,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: '17'
-          distribution: 'temurin' # <--- AGGIUNTO: Specifica il fornitore di Java
+          distribution: 'temurin'
 
       - name: Build with Maven
-        run: mvn clean installname: Java CI
+        run: mvn clean install
